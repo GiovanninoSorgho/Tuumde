@@ -40,28 +40,31 @@
 paypal.Buttons({
     createOrder: (data, actions) => {
         return actions.order.create({
-           "purchase_units": [{
-              "amount": {
-                "currency_code": "CAD",
-                "value": "25",
-                "breakdown": {
-                  "item_total": {  /* Required when including the items array */
-                    "currency_code": "CAD",
-                    "value": "25"
-                  }
-                }
+           purchase_units: [{
+              amount: {
+                // "currency_code": "CAD",
+                value: '1',
+                // "breakdown": {
+                //   "item_total": {  /* Required when including the items array */
+                //     "currency_code": "CAD",
+                //     "value": "25"
+                //   }
+                // }
               },
-              "items": [
-                {
-                  "name": "First Product Name", /* Shows within upper-right dropdown during payment approval */
-                  "description": "Optional descriptive text..", /* Item details will also be in the completed paypal.com transaction view */
-                  "unit_amount": {
-                    "currency_code": "CAD",
-                    "value": "50"
-                  },
-                  "quantity": "2"
-                },
-              ]
+              // "items": [
+              //   {
+              //     "name": "First Product Name", /* Shows within upper-right dropdown during payment approval */
+              //     "description": "Optional descriptive text..", /* Item details will also be in the completed paypal.com transaction view */
+              //     "unit_amount": {
+              //       "currency_code": "CAD",
+              //       "value": "50"
+              //     },
+              //     "quantity": "2"
+              //   },
+              
+
+
+              // ]
             }]
         });
       },
@@ -73,9 +76,9 @@ paypal.Buttons({
 
           console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
-          const transaction = orderData.purchase_units[0].payments.captures[0];
+          // const transaction = orderData.purchase_units[0].payments.captures[0];
 
-          alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+          // alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
 
           // When ready to go live, remove the alert and show a success message within this page. For example:
 
@@ -89,3 +92,7 @@ paypal.Buttons({
 
       }
 }).render('#paypal-button-container');
+
+
+
+paypal.Buttons().render('paypal-button-container');
