@@ -3283,9 +3283,12 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #ffc800;
   border-color: #ffc800;
-  position: absolute;
-  right: 10cm;
-  left: 16cm;
+}
+
+@media screen and (max-width: 700px) {
+  .buyTicket {
+    margin-top: 3em;
+  }
 }
 
 .btn-primary:hover {
