@@ -44,7 +44,7 @@ paypal.Buttons({
             amount: {
               // "currency_code": "CAD",
               // var tot = 32 * document.getElementsByClassName('unitaire');
-              value: 'tot',
+              value: '32',
               // "breakdown": {
               //   "item_total": {  /* Required when including the items array */
               //     "currency_code": "CAD",
