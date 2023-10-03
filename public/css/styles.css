@@ -2,10 +2,19 @@
 
 
 
+.ticket-btn { 
+  filter: drop-shadow(4px 1px 2px #7b7b7bd1);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: #FFB35F;
+  border: 0px;
+  box-shadow: inset 3px -1px 5px #7b7b7bd1;
+}
 
 
-
-
+#main-landing {
+  background-image: url("../assets/img/main-img.jpg");
+}
 
 
 
@@ -12602,7 +12611,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/Tuumde\ -\ avec\ fond\ noir.png");
+  background-image: url("../assets/img/main-img.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
