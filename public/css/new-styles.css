@@ -1,0 +1,46 @@
+#landing-page {
+    background-image: url(../assets/img/main-img.JPG);
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.ticket-btn { 
+    filter: drop-shadow(4px 1px 2px #7b7b7bd1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #FFB35F;
+    border: 0px;
+    box-shadow: inset 3px -1px 5px #7b7b7bd1;
+}
+
+.landing-title {
+    font-family: 'Yeseva One', cursive;
+    color: red;
+}
+
+.cauris-landing {
+    width: 40px;
+
+}
