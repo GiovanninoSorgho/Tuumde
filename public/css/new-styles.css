@@ -1,3 +1,34 @@
+:root {
+    --accent-color : #7b7b7bd1;
+}
+
+.navbar.sticky-top {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* z-index to ensure it stays on top, adjust as needed */
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        font-size: 30px;
+    }
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.equipe-card {
+    border-radius: 24px;
+    border: 1px solid #905700;
+    background: #FBFBFB;
+}
+
 #landing-page {
     background-image: url(../assets/img/main-img.JPG);
     max-height: 100vh;
@@ -43,4 +74,73 @@
 .cauris-landing {
     width: 40px;
 
+}
+
+.discover {
+    width: 80vw;
+}
+
+.discover-title {
+    color: #00000094;
+}
+
+.discover-paragraph {
+    text-align: justify;
+    letter-spacing: -0.92px;
+}
+
+.countdown {
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.countdown-box {
+    min-height: 140px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 69, 47, 0.80) 100%);
+}
+
+.countdown-number {
+    color: #FD5;
+    font-size: 3.5rem;
+}
+
+.time-subheader {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.countdown-row-container {
+    gap: 2px;
+}
+
+.edition-img {
+    width: 350px;
+    box-shadow: 51px 39px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.equipe-img {
+    width: 70%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.equipe-card {
+    width: 85%;
+    border-radius: 24px;
+    border: 1px solid #905700;
+    background: #FBFBFB;
+    box-shadow: 2px -4px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons {
+    font-size: 35px;
+}
+
+footer {
+    background-color: #D9D9D9;
+    min-height: 20vh;
+}
+
+.equipe-container {
+    overflow: auto;
 }
