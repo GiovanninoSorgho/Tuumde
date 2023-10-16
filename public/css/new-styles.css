@@ -1,3 +1,4 @@
+
 :root {
     --accent-color : #7b7b7bd1;
 }
@@ -71,9 +72,13 @@
     color: red;
 }
 
+
 .cauris-landing {
     width: 40px;
+}
 
+.cauri-chain {
+    top:-10px; position: relative;
 }
 
 .discover {
@@ -118,6 +123,27 @@
     box-shadow: 51px 39px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.arrow-position {
+    
+    @media (max-width: 1500px) {
+        position: absolute;
+        top: 0;
+        right: -50;
+    }
+    @media (min-width: 1500px) {
+        position: absolute;
+        top: 0;
+        right: -50;
+    }
+    
+}
+
+.arrow-visibility {
+    @media (max-width:992px) {
+        visibility: hidden;
+    }
+}
+
 .equipe-img {
     width: 70%;
     border-radius: 50%;
@@ -139,8 +165,4 @@
 footer {
     background-color: #D9D9D9;
     min-height: 20vh;
-}
-
-.equipe-container {
-    overflow: auto;
 }
