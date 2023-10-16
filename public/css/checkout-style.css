@@ -1,0 +1,61 @@
+.payment-type-container {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.payment-type-container.selected {
+    background-color: #FFEF9C;
+}
+
+.payments-container {
+    margin: 3em 0;
+}
+
+.payment-type-text {
+    font-size: smaller;
+}
+
+.payment-type-icon {
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.form-input-container {
+    margin: 1.5rem 0;
+    margin-bottom: 4em;
+}
+
+.form-input-style {
+    font-size: 1.5em;
+}
+
+.form-label-style {
+    font-size: 1.3em;
+}
+
+.custom-input {
+    border-radius: 30px;
+    overflow: hidden;  /* This will ensure child elements (like the input) don't exceed the parent's rounded borders */
+}
+
+.custom-input .form-control {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none; /* To remove the default Bootstrap focus glow */
+    padding-right: 60px; /* Space for the Mastercard logo */
+    background-color: #FFC1C1; /* Pink background color */
+}
+
+.custom-input .input-group-text {
+    background-color: transparent; /* Removing the default grey background */
+    border: 0;
+}
+
+.icon-rtl {
+    background: url("../assets/img/checkout/mastercard-logo.svg") no-repeat;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    
+}

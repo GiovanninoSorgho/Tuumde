@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Tuumde-Checkout</title>
+
+      <!-- Bootstrap CDN CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+      <!-- Bootstrap ICONS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-transparent.png"/>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+            
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="css/checkout-style.css">
+
+</head>
+
+<body>
+
+     <!-- NavBar -->
+     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary rounded">
+
+        <div class="container-fluid">
+
+            <!-- Navbar Button when hiting md breakpoint  -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-bar" aria-controls="main-nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsing Navbar Content -->
+          <div class="collapse navbar-collapse d-lg-flex" id="main-nav-bar" >
+            
+            <a class="navbar-brand d-none d-lg-block text-center col-lg-3 me-0" href="#">
+                <img src="../public/assets/img/logo-transparent.png" class="img-fluid" width="60" alt="">
+            </a>
+
+            <ul class="navbar-nav col-lg-6 ms-lg-0 ms-md-3 mt-lg-0 mt-md-4 justify-content-lg-center gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Edition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Contact</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+
+        <div class="mx-5 row d-flex flex-row">
+
+            <div class="col d-flex flex-column payment-method-container">
+
+                <h6 class="text-body-tertiary my-auto">Méthode de Paiement</h6>
+
+                <div class="row d-flex flex-row payments-container" style="margin: 3vh 0;">
+                    <div class="col d-flex flex-column mx-3 payment-type-container selected">
+                        <svg class="payment-type-icon " xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path d="M27.6562 4.21875H2.34375C1.97092 4.21918 1.61349 4.36748 1.34986 4.63111C1.08623 4.89474 0.937934 5.25217 0.9375 5.625V24.375C0.937934 24.7478 1.08623 25.1053 1.34986 25.3689C1.61349 25.6325 1.97092 25.7808 2.34375 25.7812H27.6562C28.0291 25.7808 28.3865 25.6325 28.6501 25.3689C28.9138 25.1053 29.0621 24.7478 29.0625 24.375V5.625C29.0621 5.25217 28.9138 4.89474 28.6501 4.63111C28.3865 4.36748 28.0291 4.21918 27.6562 4.21875ZM27.1875 6.09375V9.84375H2.8125V6.09375H27.1875ZM2.8125 23.9062V13.5938H27.1875V23.9062H2.8125Z" fill="black"/>
+                            <path d="M5.15625 18.2812H8.90625V20.1562H5.15625V18.2812ZM10.7812 18.2812H14.5312V20.1562H10.7812V18.2812Z" fill="black"/>
+                        </svg>
+                        <p class="text-center payment-type-text">Carte de Crédit</p>
+                    </div>
+                    <div class="col d-flex flex-column mx-3 payment-type-container">
+                        <!-- Paypal Icon -->
+                        <svg class="payment-type-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <g clip-path="url(#clip0_222_6559)">
+                            <path d="M25.4492 2.33513C23.8163 0.757445 20.8646 0.0810547 17.0884 0.0810547H6.12907C5.75546 0.0810664 5.3941 0.194055 5.10998 0.399707C4.82585 0.60536 4.63758 0.890185 4.57903 1.20298L0.015748 25.7361C-0.0749551 26.2199 0.366959 26.658 0.945396 26.658H7.71133L9.41055 17.5218L9.35782 17.8079C9.47887 17.1621 10.1304 16.6858 10.902 16.6858H14.1172C20.4333 16.6858 25.379 14.5111 26.8237 8.22009C26.8666 8.03403 26.9037 7.85294 26.9358 7.67602C26.7535 7.59417 26.7535 7.59417 26.9358 7.67602C27.366 5.35082 26.9329 3.76807 25.4492 2.33513Z" fill="#27346A"/>
+                            <path d="M11.9995 6.8384C12.1844 6.76374 12.3867 6.72505 12.5916 6.72516H21.1836C22.201 6.72516 23.15 6.78129 24.0172 6.8996C24.2598 6.93239 24.5012 6.97155 24.741 7.01701C25.0809 7.08059 25.4169 7.1584 25.7477 7.25016C26.174 7.37086 26.571 7.51142 26.9359 7.67602C27.366 5.34993 26.9329 3.76807 25.4492 2.33513C23.8154 0.757445 20.8646 0.0810547 17.0884 0.0810547H6.12813C5.35645 0.0810547 4.69997 0.55728 4.57903 1.20298L0.0157487 25.7352C-0.0749544 26.2198 0.36696 26.6573 0.94446 26.6573H7.71133L11.2367 7.70662C11.2713 7.52035 11.3589 7.34401 11.4918 7.19277C11.6246 7.04153 11.7989 6.91992 11.9995 6.8384Z" fill="#27346A"/>
+                            <path d="M26.8243 8.21985C25.3797 14.5099 20.4341 16.6855 14.1178 16.6855H10.9017C10.1302 16.6855 9.47848 17.1618 9.3586 17.8076L7.24465 29.1674C7.16567 29.5908 7.55192 29.9744 8.05723 29.9744H13.7607C14.0875 29.9743 14.4034 29.8755 14.6518 29.6956C14.9002 29.5156 15.0647 29.2665 15.1158 28.993L15.1713 28.7466L16.2463 22.9715L16.3156 22.6523C16.3666 22.3788 16.5311 22.1297 16.7795 21.9498C17.0278 21.7699 17.3438 21.671 17.6705 21.6709H18.5241C24.0491 21.6709 28.3753 19.7682 29.6395 14.2653C30.1672 11.9656 29.8942 10.0456 28.4982 8.69697C28.0749 8.2885 27.549 7.95115 26.9365 7.67578C26.9033 7.8536 26.8673 8.03379 26.8243 8.21985Z" fill="#2790C3"/>
+                            <path d="M25.4245 7.16458C25.1992 7.10882 24.9718 7.05946 24.7427 7.01657C24.5028 6.97185 24.2614 6.93296 24.0188 6.89994C23.1507 6.78084 22.2024 6.72461 21.1841 6.72461H12.5932C12.3881 6.72422 12.1857 6.76324 12.001 6.83875C11.8002 6.92002 11.6258 7.04155 11.4928 7.19283C11.3599 7.34412 11.2725 7.52059 11.2381 7.70696L9.41211 17.5213L9.35938 17.8074C9.47949 17.1616 10.1311 16.6853 10.9027 16.6853H14.1188C20.435 16.6853 25.3805 14.5106 26.8252 8.21965C26.8682 8.03359 26.9043 7.85329 26.9375 7.67557C26.5716 7.51186 26.1757 7.37041 25.7492 7.25051C25.6416 7.22027 25.5334 7.19162 25.4246 7.16458" fill="#1F264F"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_222_6559">
+                            <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+
+                        <p class="text-center payment-type-text">Paypal</p>
+
+                    </div>
+                    <div class="col d-flex flex-column mx-3 payment-type-container">
+                        <img class="payment-type-icon" src="./assets/img/checkout/orange-money-logo.png" width="50" alt="">
+                        
+                        <p class="text-center payment-type-text">Orange Money</p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <form action="">
+
+                        <div class="form-input-container" >
+                            <label for="email"  class="form-label-style">Email</label><br>
+                            <input class="form-control form-input-style" type="text" placeholder="moussa@gmail.com" id="email" name="email">
+                        </div>
+
+                        <div class="form-input-container" >
+                            <label for="lastName" style="font-size: 1.3em;">Nom Sur la Carte</label><br>
+                            <input class="form-control form-input-style" type="text" placeholder="Moussa Ouedraogo" id="lastName" name="lastName">
+                        </div>
+
+                        <div class="form-input-container " >
+                            <label for="cardNumber" style="font-size: 1.3em;">Numéro de carte </label><br>
+                            <input class="form-control icon-rtl form-input-style" type="text" placeholder="0000 0000 0000 0000" id="cardNumber" name="cardNumber">
+                                
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col d-flex flex-column cart-information-container">
+
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>
