@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuumde-processing</title>
+
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="assets/img/logo-transparent.png"/>
+
+   <!-- Google fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+           
+   <!-- Core theme CSS -->
+   <link rel="stylesheet" href="css/processing-style.css">
+
+   <!-- Lottie Player CDN -->
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary rounded">
+
+        <div class="container-fluid">
+
+            <!-- Navbar Button when hiting md breakpoint  -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav-bar" aria-controls="main-nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsing Navbar Content -->
+          <div class="collapse navbar-collapse d-lg-flex" id="main-nav-bar" >
+            
+            <a class="navbar-brand d-none d-lg-block text-center col-lg-3 me-0" href="#">
+                <img src="../public/assets/img/logo-transparent.png" class="img-fluid" width="60" alt="">
+            </a>
+
+            <ul class="navbar-nav col-lg-6 ms-lg-0 ms-md-3 mt-lg-0 mt-md-4 justify-content-lg-center gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">A Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Edition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Equipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Contact</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        <div class="container">
+            <div class="row w-50 mx-auto">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player 
+                src="https://lottie.host/eb460092-25f1-4ded-8134-b177c4b20888/9SCu2E2PpO.json" 
+                background="transparent" 
+                speed="0.4" 
+                direction="1" 
+                mode="normal" 
+                loop 
+                autoplay>
+                </dotlottie-player>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown container w-100" style="margin: 5em 0;">
+            <div class="row d-flex countdown-row-container">
+
+                <div class="col countdown-box d-flex flex-column justify-content-around align-items-center">
+                    <h3 class="text-white text-center">TUUMDE 2023</h3>
+                    <h3 class="text-white text-center ">Rendez-Vous dans</h3>
+                </div>
+
+                <div class="col countdown-box d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h6 class="text-white time-subheader ">Jours</h6>
+                        <h3 class="countdown-number mt-3" id="days">65</h3>
+                    </div>
+                </div>
+
+                <div class="col countdown-box d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h6 class="text-white time-subheader ">Heures</h6>
+                        <h3 class="countdown-number mt-3" id="hours">10</h3>
+                    </div>
+                </div>
+
+                <div class="col countdown-box d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h6 class="text-white time-subheader ">Minutes</h6>
+                        <h3 class="countdown-number mt-3" id="minutes">20</h3>
+                    </div>
+                </div>
+                <div class="col countdown-box d-flex flex-column align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h6 class="text-white time-subheader ">Secondes</h6>
+                        <h3 class="countdown-number mt-3" id="seconds" >45</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <!-- JQUERY CDN -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+   <!-- Page JS -->
+        <!-- Script for Countdown  -->
+    <script src="./js/countdown.js" ></script>
+    <script src="./js/checkout.js" ></script>
+    <script src="./js/processing.js" ></script>
+</body>
+
+</html>
