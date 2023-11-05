@@ -1,0 +1,252 @@
+body {
+    overflow-x: hidden;
+}
+
+.title-section {
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.title-section h1 {
+    font-family: 'Yeseva One', cursive;
+    width: 100%;
+}
+
+.title-section .left-1 {
+    position: relative;
+    width: 10em;
+    top: -1em;
+    left: 18em;
+}
+
+.title-section .left-2 {
+    position: relative;
+    width: 12em;
+    top:10em;
+    right: 15em;
+}
+
+.title-section .left-3 {
+    position: relative;
+    width: 12em;
+    top:18em;
+    right: 19em;
+}
+
+.title-section .right-1 {
+    position: relative;
+    width: 12em;
+    left: 8em;
+
+}
+
+.title-section .right-2 {
+    position: relative;
+    width: 12em;
+    top: 10em;
+    left: 10em;
+}
+
+.title-section .right-3 {
+    position: relative;
+    width: 8em;
+    top: 20em;
+    right: 15em;
+}
+
+.img-position {
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+}
+
+@media (min-height: 800px) {
+    .img-position {
+        margin-top: 5%;
+    }
+}
+
+@media (min-height: 1000px) {
+    .img-position {
+        margin-top: 10%;
+    }
+}
+
+@media (min-height: 1200px) {
+    .img-position {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .title-section .left-1 {
+        width: 10em;
+        top: 1em;
+        left: 15em;
+    }
+    
+    .title-section .left-2 {
+        width: 10em;
+        top:15em;
+        right: 8em;
+    }
+    
+    .title-section .left-3 {
+        width: 10em;
+        top:22em;
+        right: 13em;
+    }
+    
+    .title-section .right-1 {
+        width: 12em;
+        left: 8em;
+    
+    }
+    
+    .title-section .right-2 {
+        width: 10em;
+        top: 15em;
+        left: 6em;
+    }
+    
+    .title-section .right-3 {
+        width: 8em;
+        top: 25em;
+        right: 10em;
+    } 
+}
+
+@media (max-width: 1067px) {
+    .title-section .left-1 {
+        width: 15%;
+        margin-top: 5%;
+    }
+    
+    .title-section .left-2 {
+        width: 15%;
+        margin-top: 5%;
+    }
+    
+    .title-section .left-3 {
+        width: 15%;
+        margin-top: 5%;
+    }
+    
+    .title-section .right-1 {
+        width: 15%;
+        margin-top: 5%;
+    
+    }
+    
+    .title-section .right-2 {
+        width: 15%;
+        margin-top: 5%;
+    }
+    
+    .title-section .right-3 {
+        width: 15%;
+        margin-top: 5%;
+    } 
+    .img-position {
+        width: 100%;
+    }
+}
+
+@media  (max-width:992px) {
+    .title-section .img-position img {
+        visibility: hidden;
+    }
+} 
+
+.edition-carousel {
+    min-height: 50vh;
+    background-color: black;
+    color: #828282;
+}
+
+.edition-carousel h2 {
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
+
+.exposition-carousel {
+    min-height: 50vh;
+    background-color: black;
+    color: #828282;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link a {
+    font-size: large;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.social-link a:hover {
+    color: rebeccapurple
+}
+
+.social-link {
+    margin-right: 2em;
+}
