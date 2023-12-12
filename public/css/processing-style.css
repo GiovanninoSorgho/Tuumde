@@ -21,3 +21,7 @@
 .countdown-row-container {
     gap: 2px;
 }
+
+.icon-style {
+    font-size: 1.8em;
+}
